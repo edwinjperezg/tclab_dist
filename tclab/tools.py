@@ -6,7 +6,7 @@ Created on Fri Sep  8 00:11:27 2023
 """
 
 import matplotlib.pyplot as plt
-from control.matlab import *
+#from control.matlab import *
 import numpy as np
 from math import pi
 

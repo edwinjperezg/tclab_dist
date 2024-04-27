@@ -15,6 +15,22 @@ class DCMotorModel:
         args:
             nl_params: Non-linear model parameters for DC motor
         """
+
+        default_params = {
+            "J": 0.00040,
+            "B": 0.0022,
+            "Km": 0.2335,
+            "Ka": 0.2335,
+            "R": 3.4,
+            "L": 0.0015,
+            "C": 1e-4
+        }
+
+        self.x0 = x0
+        if nl_params is None:
+            self.nl_params = default_params
+        else:
+            self.nl_params = nl_params
         pass
 
     
@@ -52,6 +68,10 @@ if __name__ == "__main__":
     """
 
     # Initial values
-    x0 = [0, 0]  # Initial conditions: [initial angular velocity, initial current]
+    x0 = [0.1, 0]  # Initial conditions: [initial angular velocity, initial current]
+
+    # Instamtiate the class
+    mdc_model = DCMotorModel(x0)
+
 
     

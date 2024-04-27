@@ -9,7 +9,7 @@ from mdc_ft import DCMotorFT
 from mdc_stability import DCMotorStability
 import tkinter as tk
 import threading
-from control.matlab import *
+#from control.matlab import *
 
 
 class DCMotorGUI:

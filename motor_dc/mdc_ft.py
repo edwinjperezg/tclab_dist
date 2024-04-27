@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
 from scipy.optimize import minimize
 from scipy.interpolate import interp1d
-from control.matlab import *
+#from control.matlab import *
 from math import pi
 from scipy.interpolate import interp1d
 

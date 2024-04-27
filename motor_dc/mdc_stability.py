@@ -3,7 +3,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from control.matlab import *
+#from control.matlab import *
 
 plt.ion()  # Activate interactive mode
 
